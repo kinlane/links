@@ -108,7 +108,7 @@ jobs:
       - name: /links/bookmarklet get lambda deploy zip
         uses: kinlane/links@main
         with:
-            args: zip -qq -r m-s-linksbookmarklet-g.zip links/bookmarklet/index.js node_modules
+            args: zip -qq -r m-s-linksbookmarklet-g.zip links/bookmarklet/get/index.js node_modules
       - name: links get lambda deploy
         uses: appleboy/lambda-action@master
         with:
