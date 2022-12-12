@@ -23,7 +23,7 @@ exports.handler = vandium.generic()
           response['id'] = results.insertId;
           response['name'] = event.name;
     
-          callback( null, sql );
+          callback( null, response );
     
         });
     }
@@ -31,8 +31,8 @@ exports.handler = vandium.generic()
         
       var response = {};
       response['id'] = 0;
-      response['name'] = 'Did Not Add';
+      response['name'] = event.name;
       
-      callback( null, response );
+      callback( null, event );
     }
 });
