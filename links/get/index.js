@@ -34,7 +34,7 @@ exports.handler = vandium.generic()
       limit = 1000;
     }
 
-    var sql = "SELECT * FROM links b WHERE ";
+    var sql = "SELECT * FROM links b WHERE ID IS NOT NULL";
     if(search != ''){
        sql += " AND b.name LIKE '%" + search + "%'";
     }
