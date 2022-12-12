@@ -31,7 +31,7 @@ exports.handler = vandium.generic()
         
       var response = {};
       response['id'] = 0;
-      response['name'] = 'No Name';
+      response['name'] = 'Did Not Add';
       
       callback( null, response );
     }
